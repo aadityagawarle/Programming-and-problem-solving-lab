@@ -1,0 +1,20 @@
+# Type Content here...
+start = int(input())
+end = int(input())
+primes = []
+for n in range(start,end + 1):
+	if n<2:
+		continue
+	is_prime = True
+	for i in range(2, n):
+		if n % i == 0:
+			is_prime = False
+			break
+	if is_prime:
+		primes.append(n)
+
+if len(primes) == 0:
+	print("No primes")
+else:
+	for p in primes:
+		print(p)

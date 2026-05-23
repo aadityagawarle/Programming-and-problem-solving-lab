@@ -1,0 +1,3 @@
+celsius=float(input())
+fahrenhit=(celsius * 9/5) + 32
+print(f"{fahrenhit:.2f}")
